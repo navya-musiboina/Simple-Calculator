@@ -1,0 +1,38 @@
+//Simple Calculator
+#include<iostream>
+using namespace std;
+int main()
+{
+    int a,b;
+    cout<<"Enter the two numbers:";
+    cin>>a>>b;
+    char ch;
+    cout<<"Enter the arthmetic operator:";
+    cin>>ch;
+    while(1){
+    switch(ch)
+    {
+        case '+':
+        cout<<"Result:"<<a+b<<endl;
+        break;
+        case '-':
+        cout<<"Result:"<<a-b<<endl;
+        break;
+        case '*':
+        cout<<"Result:"<<a*b<<endl;
+        break;
+        case '/':
+        cout<<"Result:"<<a/b<<endl;
+        break;
+        case '%':
+        cout<<"Result:"<<a%b<<endl;
+        break;
+        default:
+        cout<<"Invalid operator"<<endl;
+    }
+    cout<<"Enter the arthmetic operator:";
+    cin>>ch;
+    if(ch=='0')
+    break;
+    }
+}
